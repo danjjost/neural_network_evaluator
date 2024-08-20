@@ -1,0 +1,221 @@
+<mxfile host="65bd71144e">
+    <diagram id="B0l273F9-oHQQXxtzw7R" name="Page-1">
+        <mxGraphModel dx="655" dy="1105" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="starting_input = 1.5&lt;br&gt;bias = 2&lt;br&gt;a = 0.9706" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="80" width="160" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="bias = 1&lt;br&gt;a = 0.843515" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" parent="1" vertex="1">
+                    <mxGeometry x="540" y="160" width="160" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="27" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;a&lt;/span&gt;&lt;sub&gt;3&amp;nbsp;&lt;/sub&gt;= sigmoid ( E (a&lt;sub&gt;n&amp;nbsp;&lt;/sub&gt;* w&lt;sub&gt;n&lt;/sub&gt;) + bias )" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="565" width="190" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="32" value="starting_input = 1.1&lt;br&gt;bias = 3&lt;br&gt;a = 0.9836" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="280" width="160" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="35" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="2" target="4" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="420" y="280" as="sourcePoint"/>
+                        <mxPoint x="470" y="230" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="38" value="0.3" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rotation=16;" parent="35" vertex="1" connectable="0">
+                    <mxGeometry x="0.0724" y="2" relative="1" as="geometry">
+                        <mxPoint x="-20" y="-21" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="36" value="" style="endArrow=classic;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="32" target="4" edge="1">
+                    <mxGeometry width="50" height="50" relative="1" as="geometry">
+                        <mxPoint x="390" y="360" as="sourcePoint"/>
+                        <mxPoint x="440" y="310" as="targetPoint"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="37" value="0.4" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];rotation=-25;" parent="36" vertex="1" connectable="0">
+                    <mxGeometry x="-0.2122" y="-1" relative="1" as="geometry">
+                        <mxPoint x="17" y="-24" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="39" value="2 n&lt;span style=&quot;font-size: 10px;&quot;&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="590" y="130" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="40" value="1 n&lt;sub&gt;1&lt;/sub&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="170" y="50" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="41" value="1 n&lt;sub&gt;2&lt;/sub&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="170" y="260" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="43" value="a&lt;sub&gt;2&amp;nbsp;&lt;/sub&gt;= sigmoid ( starting_input + bias )" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="535" width="200" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="44" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;a&lt;/span&gt;&lt;sub&gt;1&amp;nbsp;&lt;/sub&gt;= sigmoid ( starting_input&amp;nbsp;+ bias )" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="120" y="505" width="200" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="45" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;a&lt;/span&gt;&lt;sub&gt;3&amp;nbsp;&lt;/sub&gt;= sigmoid ( (0.9706&lt;sub&gt;&amp;nbsp;&lt;/sub&gt;* &lt;span style=&quot;font-size: 10px;&quot;&gt;0.3&lt;/span&gt;) + (0.9836 * 0.4) + 1) = sigmoid (0.29118 + 0.39344 + 1) = sigmoid ( 1.68462 ) = 0.843515" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="400" y="565" width="640" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="46" value="a&lt;sub&gt;2&amp;nbsp;&lt;/sub&gt;= sigmoid ( 1.1 + 3 ) = sigmoid (4.1) = 0.9836" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="400" y="535" width="270" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="47" value="&lt;span style=&quot;font-size: 12px;&quot;&gt;a&lt;/span&gt;&lt;sub&gt;1&amp;nbsp;&lt;/sub&gt;= sigmoid ( 1.5 + 2 ) = sigmoid (3.5) = 0.9706" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="400" y="505" width="270" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="67" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="48" target="49" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="81" value="0.1" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" parent="67" vertex="1" connectable="0">
+                    <mxGeometry x="-0.0933" y="2" relative="1" as="geometry">
+                        <mxPoint x="-32" y="18" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="68" value="0.4" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="48" target="58" edge="1">
+                    <mxGeometry x="-0.5" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="72" value="0.5" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="48" target="59" edge="1">
+                    <mxGeometry x="-0.5" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="48" value="starting_input = 1.5&lt;br&gt;bias = 2&lt;br&gt;&lt;br&gt;sigmoid( 3.5 )&lt;br&gt;&lt;br&gt;a = 0.9706" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" parent="1" vertex="1">
+                    <mxGeometry x="160" y="840" width="160" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="75" value="1.2" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=10;" parent="1" source="49" target="62" edge="1">
+                    <mxGeometry x="-0.5" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="76" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=10;" parent="1" source="49" target="63" edge="1">
+                    <mxGeometry relative="1" as="geometry"/>
+                </mxCell>
+                <mxCell id="86" value="1.4" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=10;" parent="76" vertex="1" connectable="0">
+                    <mxGeometry x="-0.5839" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="49" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;bias = 3&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;a = sig ( ( 0.9706 * 0.1 ) + ( 0.9836 * 0.2 )&amp;nbsp; + 3 )&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;a = sig ( 0.09706 + 0.19672 + 3 )&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;a = sig( 0.29378 + 3 )&lt;br&gt;&lt;/span&gt;&lt;br&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;a = 0.9642&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" parent="1" vertex="1">
+                    <mxGeometry x="480" y="760" width="160" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="69" value="0.6" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="50" target="58" edge="1">
+                    <mxGeometry x="-0.5" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="70" value="1.2" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="50" target="59" edge="1">
+                    <mxGeometry x="-0.5" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="71" value="0.2" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" parent="1" source="50" target="49" edge="1">
+                    <mxGeometry x="-0.625" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="50" value="starting_input = 1.1&lt;br&gt;bias = 3&lt;br&gt;&lt;br&gt;sigmoid ( 4.1 )&lt;br&gt;&lt;br&gt;a = 0.9836" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#008a00;fontColor=#ffffff;strokeColor=#005700;" parent="1" vertex="1">
+                    <mxGeometry x="160" y="1080" width="160" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="55" value="2 n&lt;span style=&quot;font-size: 10px;&quot;&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="530" y="730" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="56" value="1 n&lt;sub&gt;1&lt;/sub&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="210" y="810" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="57" value="2 n&lt;sub&gt;2&lt;/sub&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="210" y="1050" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="77" value="0.2" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=10;" parent="1" source="58" target="62" edge="1">
+                    <mxGeometry x="-0.64" y="-2" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="78" value="0.4" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=10;" parent="1" source="58" target="63" edge="1">
+                    <mxGeometry x="-0.64" y="2" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="58" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;bias = 1&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;a = sig ( ( 0.9706 * 0.4 ) + ( 0.9836 * 0.6 ) + 1 )&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;a = sig ( 0.3882 + 0.5901 + 1 )&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;a = sig ( 1.9783 )&lt;/span&gt;&lt;br&gt;&lt;br&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;a = 0.8784&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" parent="1" vertex="1">
+                    <mxGeometry x="480" y="960" width="160" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="79" value="1.3" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=10;" parent="1" source="59" target="63" edge="1">
+                    <mxGeometry x="-0.5" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="80" value="1.5" style="edgeStyle=none;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;fontSize=10;" parent="1" source="59" target="62" edge="1">
+                    <mxGeometry x="-0.625" relative="1" as="geometry">
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="59" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;bias = 1.1&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;&amp;nbsp;a = sig ( ( 0.9836 * 1.2 ) + ( 0.9706 * 0.5 ) + 1.1 )&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;a = sig ( 1.18032 + 0.4853 + 1.1 )&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;a = sig ( 2.76562 )&lt;br&gt;&lt;/span&gt;&lt;br&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;a = 0.9407&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" parent="1" vertex="1">
+                    <mxGeometry x="480" y="1160" width="160" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="62" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;bias = 0.4&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;a = sig ( ( 0.9642 * 1.2 ) + ( 0.8784 * 0.2 )&amp;nbsp; + ( 0.9407 * 1.5 ) + 0.4 )&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;a = sig ( 1.15704 + 0.17568 + 1.4110&amp;nbsp; + 0.4 )&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;a = sig ( 3.14377 )&lt;br&gt;&lt;/span&gt;&lt;br&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;a = 0.9586&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" parent="1" vertex="1">
+                    <mxGeometry x="800" y="840" width="160" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="63" value="&lt;font style=&quot;&quot;&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;bias = 0.6&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;a = sig ( ( 0.9642 * 1.4 ) + ( 0.8784 * 0.4 )&amp;nbsp; + ( 0.9407 * 1.3 ) + 0.6 )&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;a = sig ( 1.3498 + 0.3513&amp;nbsp; + 1.2229 + 0.6 )&lt;/span&gt;&lt;br&gt;&lt;span style=&quot;font-size: 7px;&quot;&gt;a = sig ( 3.5301 )&lt;br&gt;&lt;/span&gt;&lt;br&gt;&lt;font style=&quot;font-size: 11px;&quot;&gt;a = 0.9715&lt;/font&gt;&lt;br&gt;&lt;/font&gt;" style="ellipse;whiteSpace=wrap;html=1;aspect=fixed;fillColor=#d80073;fontColor=#ffffff;strokeColor=#A50040;" parent="1" vertex="1">
+                    <mxGeometry x="800" y="1080" width="160" height="160" as="geometry"/>
+                </mxCell>
+                <mxCell id="65" value="2 n&lt;span style=&quot;font-size: 10px;&quot;&gt;&lt;sub&gt;2&lt;/sub&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="530" y="930" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="66" value="2 n&lt;span style=&quot;font-size: 10px;&quot;&gt;&lt;sub&gt;3&lt;/sub&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="530" y="1130" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="73" value="3 n&lt;span style=&quot;font-size: 10px;&quot;&gt;&lt;sub&gt;1&lt;/sub&gt;&lt;/span&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="850" y="810" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="74" value="3 n&lt;sub&gt;2&lt;/sub&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" parent="1" vertex="1">
+                    <mxGeometry x="850" y="1050" width="60" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="82" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Synapse Layer 1&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="350" y="80" width="110" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="83" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Synapse Layer 1&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="330" y="760" width="110" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="84" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Synapse Layer 2&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=10;" parent="1" vertex="1">
+                    <mxGeometry x="680" y="760" width="110" height="40" as="geometry"/>
+                </mxCell>
+                <mxCell id="88" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;Complex&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="454.44" y="670" width="211.11" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="89" value="&lt;font style=&quot;font-size: 22px;&quot;&gt;Simple&lt;/font&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontSize=11;" parent="1" vertex="1">
+                    <mxGeometry x="299.45" y="20" width="211.11" height="50" as="geometry"/>
+                </mxCell>
+                <mxCell id="90" value="t = 0.25&lt;br&gt;(t-y) errorSignal = - 0.593515" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="710" y="225" width="190" height="35" as="geometry"/>
+                </mxCell>
+                <mxCell id="91" value="(errorSignal * a * (1-a) ) g =&amp;nbsp;0.02065" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="517.5" y="320" width="205" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="92" value="(0.02065 * 0.9836) g =&amp;nbsp;0.020316" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=-25;" vertex="1" parent="1">
+                    <mxGeometry x="290" y="290" width="190" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="93" value="(0.02065* 0.9706) g =&amp;nbsp;0.020042&lt;br&gt;new weight = 0.320042" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=17;" vertex="1" parent="1">
+                    <mxGeometry x="290" y="170" width="190" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="94" value="(0.02065 * 0.4) * 0.9836 * (1 - 0.9836)&amp;nbsp; g = 0.00013" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=0;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="440" width="320" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="95" value="(0.02065 * 0.3) * 0.9706 * (1 - 0.9706)&amp;nbsp; g = 0.00017&lt;br&gt;new bias = 2.00017" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=0;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="240" width="320" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="96" value="new bias = 1 + (1 * 0.02065) = 1.02605" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="517.5" y="350" width="212.5" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="97" value="Learning Rate is 1 by default" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+                    <mxGeometry x="720" y="40" width="170" height="30" as="geometry"/>
+                </mxCell>
+                <mxCell id="98" value="new weight = 0.4 + (1 * 0.020316) = 0.420316" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=-25;" vertex="1" parent="1">
+                    <mxGeometry x="289.45" y="300" width="250.55" height="70" as="geometry"/>
+                </mxCell>
+                <mxCell id="101" value="new bias = 3 + 0.00013 = 3.00013" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;rotation=0;" vertex="1" parent="1">
+                    <mxGeometry x="40" y="460" width="320" height="30" as="geometry"/>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
