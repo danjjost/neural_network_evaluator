@@ -1,4 +1,10 @@
 {
+    "python.languageServer": "Pylance",
+    "python.testing.unittestEnabled": true,
+    "python.analysis.typeCheckingMode": "strict",
     "terminal.integrated.automationProfile.windows": {},
-    "terminal.integrated.defaultProfile.windows": "Git Bash"
+    "terminal.integrated.defaultProfile.windows": "Git Bash",
+    "workbench.colorCustomizations": {
+        "activityBar.background": "#2a009c",
+    }
 }
