@@ -33,9 +33,11 @@ def get_dependencies() -> Dependencies:
 
 @app.blob_trigger(arg_name="myblob", path="input", connection="AzureWebJobsStorage") # type: ignore
 def BlobTriggerFunction(blob: func.InputStream, d: Dependencies = get_dependencies()):
+    NeuralNetworkEvaluator(blob, d)
+
+def NeuralNetworkEvaluator(blob: func.InputStream, d: Dependencies):
     network = d.blob_network_converter.convert(blob)
     
     d.evaluation.evaluate(network)
     
     d.blob_uploader.upload_blob(network, isInput=False)
-    
