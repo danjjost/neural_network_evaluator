@@ -5,9 +5,9 @@ from dependencies import Dependencies, get_dependencies
 app = func.FunctionApp()
 
 
-@app.blob_trigger(arg_name="myblob", path="input", connection="AzureWebJobsStorage") # type: ignore
-def BlobTriggerFunction(blob: func.InputStream, d: Dependencies = get_dependencies()):
-    NeuralNetworkEvaluator(blob, d)
+@app.blob_trigger(arg_name="blob", path="input", connection="AzureWebJobsStorage") # type: ignore
+def BlobTriggerFunction(blob: func.InputStream):
+    NeuralNetworkEvaluator(blob, get_dependencies())
 
 def NeuralNetworkEvaluator(blob: func.InputStream, d: Dependencies):
     network = d.blob_network_parser.parse(blob)

@@ -16,7 +16,7 @@ class Config():
         self.learning_rate: float = 0.1 # Default: 0.001 
         
         # The number of training batches to run before evaluating the network and applying gradients
-        self.training_batch_size: int = 32
+        self.training_batch_size: int = 3
                 
         self.debug: bool = False
         

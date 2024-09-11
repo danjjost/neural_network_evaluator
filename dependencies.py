@@ -4,7 +4,7 @@ from azure_config import AzureConfig
 from config import Config
 from src.blob_network_converter import BlobNetworkParser
 from src.blob_client import BlobClient
-from src.digit_recognition.image_loader import ImageLoader
+from src.digit_recognition.blob_storage_image_loader import BlobStorageImageLoader
 from src.digit_recognition.mnist_evaluation import MNISTEvaluation
 from src.digit_recognition.mnist_image_evaluator import MNISTImageEvaluator
 from src.neuralnet.to_dict.network_to_dict import NetworkToDict
@@ -21,12 +21,12 @@ class Dependencies:
         
         self.blob_network_parser = BlobNetworkParser(self.network_to_dict)
         
-        self.image_loader = ImageLoader(self.config, self.random)
+        self.image_loader = BlobStorageImageLoader(self.config, self.azure_config, self.random)
         self.mnist_image_evaluator = MNISTImageEvaluator(self.config)
         self.evaluation = MNISTEvaluation(self.config, self.image_loader, self.mnist_image_evaluator)
 
         input_blob_container = self.initialize_container_client(self.azure_config, self.azure_config.neural_network_input_container)
-        output_blob_container = self.initialize_container_client(self.azure_config, self.azure_config.neural_network_input_container)
+        output_blob_container = self.initialize_container_client(self.azure_config, self.azure_config.neural_network_output_container)
         
         self.input_blob_client = BlobClient(self.network_to_dict, input_blob_container)
         self.output_blob_client = BlobClient(self.network_to_dict, output_blob_container)
