@@ -17,8 +17,10 @@ class TestBlobStorageImageLoader(unittest.TestCase):
     def test_get_training_image(self):
         image = self.image_loader.get_training_image()
         assert image is not None
+        assert len(image.image_array) == 784
         
         
     def test_get_testing_image(self):
         image = self.image_loader.get_testing_image()
         assert image is not None
+        assert len(image.image_array) == 784

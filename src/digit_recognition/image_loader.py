@@ -1,10 +1,8 @@
+
 import os
 from random import Random
 from typing import Optional
 from config import Config
-
-import numpy as np
-from PIL import Image
 
 from src.digit_recognition.MNISTImage import MNISTImage
         
@@ -59,10 +57,4 @@ class ImageLoader():
     
     
     def load_image(self, file_path: str) -> list[float]:
-        img = Image.open(file_path) # type: ignore
-
-        img_gray = img.convert('L')
-        img_array = np.array(img_gray)
-        img_array_float = img_array.astype(np.float32) / 255.0
-        
-        return [x.item() for x in img_array_float.flatten()]
+        raise NotImplementedError("load_image must be implemented by the subclass.")

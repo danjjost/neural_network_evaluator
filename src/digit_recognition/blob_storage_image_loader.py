@@ -1,10 +1,8 @@
-from io import BytesIO
 from random import Random
 from typing import Optional
 from azure_config import AzureConfig
+import json
 
-import numpy as np
-from PIL import Image
 from azure.storage.blob import BlobServiceClient
 
 from config import Config
@@ -70,7 +68,7 @@ class BlobStorageImageLoader(ImageLoader):
         download_stream = blob_client.download_blob() # type:ignore
         image_data = download_stream.readall()
         
-        image_array = self.load_image_from_bytes(image_data)
+        image_array = self.load_data_from_json(image_data)
         
         if self.config.debug:
             print (f"Loaded image from {container_name}/{random_blob_name}")
@@ -78,10 +76,9 @@ class BlobStorageImageLoader(ImageLoader):
             
         return MNISTImage(image_array, random_digit)
     
-    def load_image_from_bytes(self, image_data: bytes) -> list[float]:
-        img = Image.open(BytesIO(image_data)) 
-        img_gray = img.convert('L')
-        img_array = np.array(img_gray)
-        img_array_float = img_array.astype(np.float32) / 255.0
-        return [x.item() for x in img_array_float.flatten()]
+    def load_data_from_json(self, json_data: bytes) -> list[float]:
+        json_str = json_data.decode('utf-8')
+        data = json.loads(json_str)
+        return data
+
 

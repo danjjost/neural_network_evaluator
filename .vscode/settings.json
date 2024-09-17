@@ -6,5 +6,12 @@
     "terminal.integrated.defaultProfile.windows": "Git Bash",
     "workbench.colorCustomizations": {
         "activityBar.background": "#2a009c",
-    }
+    },
+    "azureFunctions.deploySubpath": ".",
+    "azureFunctions.scmDoBuildDuringDeployment": true,
+    "azureFunctions.pythonVenv": ".venv",
+    "azureFunctions.projectLanguage": "Python",
+    "azureFunctions.projectRuntime": "~4",
+    "debug.internalConsoleOptions": "neverOpen",
+    "azureFunctions.projectLanguageModel": 2
 }

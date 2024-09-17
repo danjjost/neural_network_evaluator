@@ -13,12 +13,12 @@ class Config():
         self.mnist_training_folder: str = "./MNIST/training/"
 
         # The learning rate of the network, affects the speed of gradient descent
-        self.learning_rate: float = 0.1 # Default: 0.001 
+        self.learning_rate: float = 0.005 # Default: 0.001 
         
         # The number of training batches to run before evaluating the network and applying gradients
-        self.training_batch_size: int = 3
+        self.training_batch_size: int = 16
                 
-        self.debug: bool = False
+        self.debug: bool = True
         
         # If a network guesses a single value more than the is_guessing_percent of the time, 
         # it will be penalized by is_guessing_penalty

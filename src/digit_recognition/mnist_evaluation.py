@@ -4,6 +4,7 @@ from src.digit_recognition.image_loader import ImageLoader, MNISTImage
 from src.digit_recognition.mnist_image_evaluator import MNISTImageEvaluator
 from src.neuralnet.network import Network
 from src.pipeline.population_modifiers.epoch.evaluation import Evaluation
+import logging
 
 
 class MNISTEvaluation(Evaluation):
@@ -20,28 +21,29 @@ class MNISTEvaluation(Evaluation):
         
         
     def evaluate(self, network: Network):
+        logging.info("MNISTEvaluation - Starting...")
         network.score = 0
         
         likely_digits: list[int] = []
         
-        for _ in range(self.config.training_batch_size):
+        for i in range(self.config.training_batch_size):
+            logging.info(f"MNISTEvaluation - Evaluating image {i + 1}/{self.config.training_batch_size}...")
             image = self.get_image()
             likely_digit = self.mnist_image_evaluator.evaluate_image(network, image)
             likely_digits.append(likely_digit)
-
+            
+        logging.info(f"MNISTEvaluation - Finished training batch of size {self.config.training_batch_size}.")
+        
         self.apply_gradients_if_training(network)
         
         if self.is_guessing(likely_digits):
             network.score -= self.config.is_guessing_penalty
             
-        if self.config.debug:
-            print(f'MNISTEvaluation - Network scored {network.score}/{self.config.training_batch_size}.')
+        logging.info(f'MNISTEvaluation - Network scored {network.score}/{self.config.training_batch_size}.')
 
     def apply_gradients_if_training(self, network: Network):
         if self.config.mode == NetworkEvaluationMode.TRAIN:
-            if self.config.debug:
-                print("MNISTEvaluation - Applying Gradients")
-            
+            logging.info("MNISTEvaluation - Applying Gradients")
             network.apply_gradients()
 
     
